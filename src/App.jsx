@@ -1,8 +1,10 @@
 import './App.css'
 
+import AllEmployeesContainer from './components/containers/AllEmployeesContainer';
+
 function App() {
   return (
-    <h1>WELCOME</h1>
+    <AllEmployeesContainer/>
   );
 }
 
