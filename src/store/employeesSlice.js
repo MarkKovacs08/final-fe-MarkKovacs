@@ -13,7 +13,7 @@ export function employeesReducer(state = initialState, action) {
 //API calls go here
 import axios from "axios";
 //PATH (should be where your server is running)
-const PATH = "https://jsonplaceholder.typicode.com/";
+const PATH = "https://jsonplaceholder.typicode.com";
 
 //Thunk 
 export async function fetchEmployees(dispatch, getState) {
