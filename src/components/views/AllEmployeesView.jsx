@@ -1,7 +1,6 @@
-function AllEmployeesView (props) {
-    console.log(props);
+function AllEmployeesView(props) {
     return (
-        <h4>Hello from view</h4>
+        <h4>ALL EMPLOYEES</h4>
     );
 
 }
