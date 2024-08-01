@@ -1,9 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './App.jsx';
 import AllEmployeesContainer from './components/containers/AllEmployeesContainer.jsx';
 import AllTasksContainer from './components/containers/AllTasksContainer.jsx';
-import './index.css'
+
+import './index.css';
 
 import {
   createBrowserRouter,
@@ -29,4 +31,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);
