@@ -16,8 +16,12 @@ import axios from "axios";
 const PATH = "https://jsonplaceholder.typicode.com";
 
 //Thunk 
-export async function fetchEmployees(dispatch, getState) {
-    const response = await axios.get(`${PATH}/users`);
-    dispatch({ type: 'employees/employeesLoaded', payload: response.data });
-}
+export const fetchEmployees = () => async (dispatch) => {
+  try {
+    let res = await axios.get(`${PATH}/users`);
+    dispatch({type: 'employees/employeesLoaded', payload: res.data});
+  } catch(err) {
+    console.error(err);
+  }
+};
 
